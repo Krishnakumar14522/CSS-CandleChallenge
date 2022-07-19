@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Candle</title>
+	<style type="text/css">
+		 #wrapper{
+		 	border:2px solid #2c3e50;
+		 	width: 400px;
+		 	height: 400px;
+            position: relative;
+            background-color: #2c3e50;
+		 }
+		 #wrapper{
+		 	position: absolute;
+		 	right: 500px;
+		 }
+		 #shadow{
+		 border:5px solid #1B233E;
+		 padding-right: 80px;
+		 position: relative;
+		 }
+		 #shadow{
+		 	position: absolute;
+		 	right: 160px;
+		 	top: 250px;
+		 }
+        #candle{
+        	border:3px solid #e6e1e1;
+        	position: relative;
+        	width: 60px;
+        	height: 110px;
+        	background-color: 
+        	border-radius: 12px;
+            background-image:  linear-gradient(to right, #ffffff,#bebebe);
+        }
+
+        #candle{
+        	position: absolute;
+        	right: 172px;
+            top: 135px;
+        }
+#line{
+	position: absolute;
+		width: 4px;
+		height: 15px;
+		top: -15px;
+		left: 28px;
+		background: #AD88A9;
+		border-radius: 2px 2px 0 0;
+}
+#flame{
+	border:5px solid  #FFAD00;
+	position: absolute;
+	width: 10px;
+	height: 20px;
+	top: -39px;
+	left: 20px;
+	border-radius:52px 120px 0 0; 
+	background-color:  #FFAD00;
+	animation-name:fire;
+	animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+
+}
+@keyframes fire{
+	0%, 25%, 50%, 60%, 80%, 100% {
+		border-radius: 2px 14px 8px 8px / 20px 20px 8px 8px;
+	}
+	15%, 30%, 60%, 70%, 90% {
+		border-radius: 14px 2px 8px 8px / 20px 20px 8px 8px;
+	}
+
+}
+#me{
+	font-weight: bold;
+	font-family: cursive;
+	color: white;
+	position: absolute;
+	top: 380px;
+	left: 260px;
+	text-shadow:0px 4px 17px #FFAD00;
+}
+
+
+	</style>
+</head>
+<body>
+<div id="wrapper">
+ <div id="shadow"></div>
+<div id="candle">
+	<div id="line"></div>
+	<div id="flame"
+	></div>
+</div>
+<div id="me">
+	Created by Kriz
+</div>
+
+</div>
+</body>
+</html>
